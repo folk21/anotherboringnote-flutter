@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "specId": "flutter-port-parity",
+  "specPath": "docs/specs/active/subspecs/flutter-port-parity/spec.md",
+  "implementationPath": "docs/specs/active/subspecs/flutter-port-parity/implementation.md",
+  "owner": "MAIN_AND_HUMAN",
+  "worker": "AIDER",
+  "platformAcceptance": "not-run",
+  "stages": [
+    {
+      "id": "S01",
+      "title": "Domain/storage/toolchain verification",
+      "status": "verification_pending",
+      "dependsOn": [],
+      "evidence": [],
+      "lastUpdatedBy": "MAIN",
+      "notes": "Source and tests drafted; Flutter tooling was unavailable during packaging."
+    },
+    {
+      "id": "S02",
+      "title": "Flutter interaction and UI verification",
+      "status": "verification_pending",
+      "dependsOn": ["S01"],
+      "evidence": [],
+      "lastUpdatedBy": "MAIN",
+      "notes": "Widgets drafted; browser/native interactive acceptance has not run."
+    },
+    {
+      "id": "S03",
+      "title": "Native platform integration acceptance",
+      "status": "ready",
+      "dependsOn": ["S01", "S02"],
+      "evidence": [],
+      "lastUpdatedBy": "MAIN",
+      "notes": "Requires actual macOS/Android/iOS integration evidence."
+    },
+    {
+      "id": "S04",
+      "title": "Parity evidence and spec closeout",
+      "status": "ready",
+      "dependsOn": ["S01", "S02", "S03"],
+      "evidence": [],
+      "lastUpdatedBy": "MAIN",
+      "notes": "MAIN and developer must review traceability and archive accepted work."
+    }
+  ]
+}
